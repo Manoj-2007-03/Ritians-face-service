@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ritians-face-service
+    runtime: python
+    pythonVersion: "3.11.9"
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn face_service:app
+    envVars:
+      - key: MONGODB_URI
+        value: mongodb+srv://RITIANS0054:MANOJ2007@cluster0.9zkrqnt.mongodb.net/test
