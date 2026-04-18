@@ -5,6 +5,6 @@ pymongo
 numpy==1.26.4
 pillow
 opencv-python-headless
-tensorflow==2.16.2
-tf-keras==2.16.0
+tensorflow==2.15.0
+tf-keras
 gunicorn
