@@ -142,7 +142,7 @@ def _get_insightface():
                 )
                 # det_size controls the detector input resolution.
                 # Smaller = faster; (320,320) is the sweet spot for CPU.
-                fa.prepare(ctx_id=0, det_size=(320, 320))
+                fa.prepare(ctx_id=0, det_size=(160, 160))
                 _insightface_app = fa
                 log.info("✅ InsightFace ready.")
             except ImportError:
